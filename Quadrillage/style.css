@@ -1,0 +1,11 @@
+.cases{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    height: 600px;
+}
+
+.cases a {
+    border: solid, 3px, black;
+    text-align: center;
+}
