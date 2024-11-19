@@ -9,3 +9,23 @@
     border: solid, 3px, black;
     text-align: center;
 }
+
+.colorBlue {
+    background-color:cadetblue;
+}
+
+.colorYellow{
+    background-color: yellow;
+}
+
+.colorPink{
+    background-color: pink;
+}
+
+.colorGreen{
+    background: greenyellow;
+}
+
+.colorRed{
+    background-color: crimson;
+}

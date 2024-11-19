@@ -1,13 +1,27 @@
-const div = document.querySelector("main > div");
+// je stock dans une variable sur quel endroit du html je veux qu'il y ait un event
+const casesColor = document.querySelectorAll('.cases > a');
 
-div.addEventListener("click", handleClickOnDiv);
+// mes classes css dans un tableau que forEach pourra parcourir
+const colors = ['colorBlue', 'colorYellow', 'colorPink', 'colorGreen', 'colorRed'];
+// je déclare une variable pour pouvoir l'incrémenter plus tard
+let i = 0;
 
-function handleClickOnDiv(event) {
-  if (event.target.classList.contains("border-black")) {
-    event.target.classList.remove("border-black");
-    event.target.classList.add("border-red");
-  } else {
-    event.target.classList.add("border-black");
-    event.target.classList.remove("border-red");
-  }
+//grace au forEach je déclenche un event au click sur un element + j'appelle ma focntion
+casesColor.forEach((caseUnique) => {
+  caseUnique.addEventListener('click', handleChangeColor)
+});
+
+//je déclare ma fonction
+function handleChangeColor(event) {
+
+// je supprime les couleurs
+  colors.forEach(element => {
+    event.target.classList.remove(element)
+  });
+
+// j'ajoute une couleur 
+  event.target.classList.add(colors[i])
+  i += 1;
+// je pose une condition pour réinitialiser mon i 
+  if (i > 4) { i = 0 };
 }
