@@ -1,0 +1,12 @@
+B code 66 ou string KeyB
+G code 71 ou string KeyG
+
+declencher evenement quand keycode est = a celui qu'on a décidé
+
+deux touches différentes
+
+valeurs dans un tableau a comparer sur un key down et un key up
+
+tableau.push
+
+event.defaultPrevented
