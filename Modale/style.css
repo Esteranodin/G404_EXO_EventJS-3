@@ -1,0 +1,30 @@
+.case {
+    display: none;
+}
+
+.button {
+    display:flex;
+    border: solid, 2px, blueviolet;
+    background-color: rebeccapurple;
+    width: 100px;
+    align-content: center;
+    justify-content: center;
+    padding: 5px;
+    margin: 20px 0 0 20px;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.caseDisplay {
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    text-align: center;
+    align-content: center;
+    padding: 10px;
+    margin: 20px 0 0 20px;
+}
+
+.bodyGrey{
+    background-color: gray;
+}
