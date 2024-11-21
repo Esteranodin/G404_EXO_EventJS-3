@@ -25,3 +25,5 @@ function handleChangeColor(event) {
 // je pose une condition pour réinitialiser mon i 
   if (i > 4) { i = 0 };
 }
+
+// possible de stocker event.target dans une variable pour la réutiliser plus simplement (avec un nom qui a du sens)
